@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>curso</title>
+      <style>
+        @font-face {
+  font-family: "Kablammo";
+  src: url(' Kablammo[MORF].woff2') format('woff2'),
+       url('Kablammo[MORF].ttf') format('truetype');
+}
+
+
+
+h1 {
+  font-family: "Kablammo";
+  font-variation-settings: "MORF" 0;
+  font-size: 20vw;
+  animation: morph 10s linear infinite;
+  text-align: center;
+  line-height: 1;
+}
+
+h1 > span {
+  font-size: 2em;
+}
+@keyframes morph {
+  50% {
+    font-variation-settings: "MORF" 60;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100%;
+  font-family: system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+      </style>
+  </head>
+  
+  <body>
+    <h1>Te<br><span>amo</span><br>muito</h1>
+    <h1>❤️ 
+  </body>
+  </html>
