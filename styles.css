@@ -1,0 +1,45 @@
+
+
+@font-face {
+  font-family: "Kablammo";
+  src: url('caminho/para/Kablammo[MORF].woff2') format('woff2'),
+       url('caminho/para/Kablammo[MORF].ttf') format('truetype');
+}
+
+
+
+h1 {
+  font-family: "Kablammo";
+  font-variation-settings: "MORF" 0;
+  font-size: 20vw;
+  animation: morph 10s linear infinite;
+  text-align: center;
+  line-height: 1;
+}
+
+h1 > span {
+  font-size: 2em;
+}
+
+@keyframes morph {
+  50% {
+    font-variation-settings: "MORF" 60;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100%;
+  font-family: system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+}
